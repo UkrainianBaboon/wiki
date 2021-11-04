@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+<h1>Створення нової статті</h1>
+<form action="{% url 'submit' %}" method="POST">
+{% csrf_token %}
+{% comment %} <H1>Назва статті:</H1> {% endcomment %}
+{{title_form}}
+{% comment %} <h3>Наповнення статті:</h3> {% endcomment %}
+{% comment %} <textarea name="text" id="textarea_for_a_new_entry"></textarea> {% endcomment %}
+<button type="submit" class="btn btn-primary btn-lg">Публікувати статтю</button>
+</form>
+{% endblock body %}

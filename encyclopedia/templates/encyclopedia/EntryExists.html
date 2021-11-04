@@ -1,0 +1,7 @@
+{% extends "encyclopedia/layout.html" %}
+{% block body %}
+<H1>Стаття з назвою "{{title}}" вже існує.</H1>
+<h4>Стаття доступна за посиланням:</h2>
+<a href="wiki/{{title}}">{{title}}</a>
+{% endblock body %}
+

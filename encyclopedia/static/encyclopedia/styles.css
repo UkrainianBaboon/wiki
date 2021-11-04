@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+code {
+  white-space: pre;
+}
+
+h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.main {
+  padding: 10px;
+}
+
+.search {
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 5px;
+}
+
+label[for="id_new_entry_content"] {
+  display: block;
+  font-weight: bold;
+}
+
+label[for="id_new_entry_title"] {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  display: block;
+}
+
+form[action="/search"] button[type="submit"] {
+  padding-top: 4px;
+  margin-top: 4px;
+  margin-bottom: 7px;
+}
+
+textarea {
+  resize: none;
+  height: 80vh;
+  width: 80%;
+}
+/*# sourceMappingURL=styles.css.map */
