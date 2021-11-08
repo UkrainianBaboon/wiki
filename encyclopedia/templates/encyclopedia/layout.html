@@ -9,10 +9,9 @@
         <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
     </head>
     <body>
-        <div class="row">
+        <div class="row" id="wiki_layout_main_div">
             <div class="sidebar col-lg-2 col-md-3">
                 <h2>Проєкт Wiki</h2>
-                {% comment %} <form> {% endcomment %}
                 <form action="{% url 'search' %}" method="GET">
                     <input class="search" type="text" name="q" placeholder="Пошук в енциклопедії">
                     <button type="submit" class="btn btn-primary btn-sm">Пошук</button>
