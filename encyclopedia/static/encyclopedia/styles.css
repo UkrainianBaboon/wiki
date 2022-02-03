@@ -59,4 +59,10 @@ textarea {
   height: 80vh;
   width: 80%;
 }
+#wiki_layout_main_div {
+  max-width: 100%;
+}
+.row {
+  max-width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

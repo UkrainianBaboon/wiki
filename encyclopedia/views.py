@@ -49,7 +49,7 @@ def search(request):
     results = []
     for i in range(len(entries)):
         if query.upper() == entries[i].upper():
-            return HttpResponseRedirect(f"wiki/{entries[i]}")
+            return HttpResponseRedirect(f"{entries[i]}")
         elif query.upper() in entries[i].upper():
             results.append(entries[i])
     return render(request, "encyclopedia/search.html", {
@@ -106,3 +106,6 @@ def random(request):
         "title": random_title,
         "page_content": markdown.markdown(random_content)
     })
+
+def redirect(request): 
+    return HttpResponseRedirect(reverse('index'))
